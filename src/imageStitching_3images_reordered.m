@@ -8,7 +8,7 @@ close all
 
 % choose the folder name
 %folder_name = 'nd';
-folder_name = 'room_horizontal';
+folder_name = 'room_vertical';
 
 % Read images you want to stitch
 im_left = imread(sprintf('data/%s/1.jpg', folder_name));

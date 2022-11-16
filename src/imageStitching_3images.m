@@ -155,4 +155,4 @@ panorama = step(blender, panorama, warped_im_right, mask_right);
 % And show the effects:
 figure
 imshow(panorama)
-imwrite(panorama,'output/panorama_3images.png')
+imwrite(panorama, 'output/panorama_3images.png')
