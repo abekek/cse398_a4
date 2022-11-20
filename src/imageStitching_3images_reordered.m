@@ -7,7 +7,7 @@ clear all
 close all
 
 % choose the folder name
-folder_name = 'library';
+folder_name = 'nd';
 
 % Read images you want to stitch
 im_left = imread(sprintf('data/%s/1.jpg', folder_name));

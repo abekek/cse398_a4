@@ -74,8 +74,8 @@ And the inverse image warping:
 
 Here is the result of the image stitching for 3 images using different images:
 
-![alt text](output/panorama_3images_library_reordered.png)
+![alt text](output/panorama_3images_trail_reordered.png)
 
 And the inverse image warping:
 
-![alt text](output/panorama_3images_library_cropped_inverse_warping.png)
+![alt text](output/panorama_3images_trail_cropped_inverse_warping.png)
