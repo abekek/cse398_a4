@@ -68,5 +68,14 @@ And the inverse image warping:
 
 ### Task 4
 
+1. Open the file named ```imageStitching_3images_reordered.m``` in ```/src``` folder using MATLAB.
+2. You can also change the ```folder_name``` in the beginning of the script to use your own images. The folder should contain three images with the names ```1.jpg```, ```2.jpg```, and ```3.jpg```.
+3. Run the script. It will display the result of the image stitching. The result will be saved in ```/output``` folder with the name ```panorama_3images_{folder_name}_reordered.png```.
 
+Here is the result of the image stitching for 3 images using different images:
 
+![alt text](output/panorama_3images_library_reordered.png)
+
+And the inverse image warping:
+
+![alt text](output/panorama_3images_library_cropped_inverse_warping.png)

@@ -7,8 +7,7 @@ clear all
 close all
 
 % choose the folder name
-%folder_name = 'nd';
-folder_name = 'room_vertical';
+folder_name = 'library';
 
 % Read images you want to stitch
 im_left = imread(sprintf('data/%s/1.jpg', folder_name));
@@ -90,7 +89,6 @@ tforms(3) = estimateGeometricTransform(...
 % *** TASK 3: think if this correction is still needed
 
 
-
 % Compute the output limits for each transform
 imageSize = size(im_left);     % assume that the size of all images is the same
 for i = 1:numel(tforms)
@@ -145,12 +143,13 @@ mask_right = imwarp(true(size(im_right,1),size(im_right,2)), tforms(3), 'OutputV
 % Overlay the warped images onto the panorama
 panorama = step(blender, panorama, warped_im_middle, mask_middle);
 panorama = step(blender, panorama, warped_im_left, mask_left);
-% panorama = step(blender, panorama, warped_im_right, mask_middle);
 
 % *** TASK 2: finally add your warped right image (with mask) to your
 % panorama here:
 
 panorama = step(blender, panorama, warped_im_right, mask_right);
+
+% panorama = step(blender, panorama, warped_im_middle, mask_middle);
 
 % And show the effects:
 figure
